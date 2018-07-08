@@ -20,7 +20,7 @@ public class ReleaseController {
         this.releaseService = releaseService;
     }
 
-    @RequestMapping(value = "/release", method = RequestMethod.POST)
+    @RequestMapping(value = "/releases", method = RequestMethod.POST)
     public ResponseEntity releaseFunds(@RequestBody FundRelease fundRelease) {
         releaseService.releaseFunds(fundRelease);
         return new ResponseEntity(HttpStatus.CREATED);
