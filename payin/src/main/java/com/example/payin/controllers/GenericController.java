@@ -47,7 +47,7 @@ public class GenericController {
             @RequestParam(value = "includeBalance", defaultValue = "false") Boolean includeBalance) {
 
         ObjectNode node = JsonNodeFactory.instance.objectNode();
-        node.put("asd", "def");
+        node.put("balance", 200);
         return ResponseEntity.ok(node);
     }
 }
